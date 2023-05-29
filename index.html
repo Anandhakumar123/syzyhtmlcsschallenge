@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav bar start -->
+    <nav>
+      <div class="cname">
+        <a href="#"><h1>Syzy Technologies</h1></a>
+      </div>
+      <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li><a href="#">CAREERS</a></li>
+      </ul>
+    </nav>
+    <!-- nav bar end -->
+
+    <hr />
+
+    <!-- section start -->
+    <section class="info">
+      <h4>ACCOUNT SIGN IN</h4>
+      <p>
+        Sign in to youraccount to access your profile, history, and any
+        privatepages you'e been granted access to.
+      </p>
+    </section>
+    <!-- section end -->
+
+    <!-- form start -->
+    <form action="#" class="form">
+      <label for="">Email</label><br />
+      <input type="email" class="place" name="" id="" required /><br />
+
+      <label for="">Password</label><br />
+      <input type="password" class="place" name="" id="" required /><br />
+
+      <button type="submit" class="btn">SIGN IN</button>
+    </form>
+    <!-- form end -->
+  </body>
+
+  <script>
+    const menu = document.querySelector(".menu");
+    const list = document.querySelector("nav ul");
+    menu.addEventListener("click", () => {
+      list.classList.toggle("showmenu");
+    });
+  </script>
+</html>
